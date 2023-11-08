@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas pw07</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .row2,.row3,.row1 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row2-kuning {
+            background-color: yellow;
+            height: 100px;
+            flex-grow: 1;
+        }
+        .row2-orange {
+            background-color: orange;
+            height: 100px;
+            flex-grow: 3;
+        }
+        
+        .row3-hijau {
+            background-color: green;
+            height: 630px;
+            flex-grow: 1;
+        }
+
+        .row3-abu {
+            background-color: grey;
+            height: 630px;
+            flex-grow: 2;
+        }
+
+        .row3-aqua {
+            background-color: aqua;
+            height: 630px;
+            flex-grow: 1;
+        }
+
+        .row1 {
+            background-color: blue;
+            height: 100px;
+            flex-grow: 1;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row2">
+            <div class="row2-kuning"></div>
+            <div class="row2-orange"></div>
+        </div>
+        <div class="row3">
+            <div class="row3-hijau"></div>
+            <div class="row3-abu"></div>
+            <div class="row3-aqua"></div>
+        </div>
+        <div class="row1"></div>
+    </div>
+</body>
+</html>
