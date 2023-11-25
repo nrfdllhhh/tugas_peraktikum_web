@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 100vh;
+        }
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+            margin: -8px;
+            
+            
+        }
+        
+        .flex-container > div {
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            
+
+        }
+        
+        .nav {
+            min-height: 98vh;
+            background-color: blueviolet;
+        
+        }
+        
+        .header {
+            background-color: blue;
+            text-align: left;
+            height: 100px;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+            height: 79vh;
+        }
+        
+        .article {
+            background-color: fuchsia ;
+            text-align: center;
+            flex: 2;
+        }
+        
+        .aside {
+            background-color: cadetblue;
+            flex: 1;
+        }
+        
+        .footer {
+            background-color: red;
+            height: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div style="width: 400px;" class="nav">
+            NAV
+            
+        </div>
+        <div style="flex-grow: 2">
+            <div class="header">
+                header
+            </div>
+            <div class="main">
+                <div class="article">Artikel</div>
+                <div class="aside">Aside</div>
+            </div>
+            <footer class="footer">footer</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
