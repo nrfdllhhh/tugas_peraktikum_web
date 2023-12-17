@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bilangan Penjumlahan Sederhana</title>
+    
+</head>
+<body>
+    <h1>Bilangan Penjumlahan Sederhana</h1>
+    
+    <label for="bilangan1">Bilangan 1 :</label>
+    <input type="number" id="bilangan1">
+    <br>
+    <label for="bilangan2">Bilangan 2 :</label>
+    <input type="number" id="bilangan2">
+    <br>
+    <button onclick="hitung()">Hitung</button>
+    
+    <p id="hasil"></p>
+
+    <script>
+        function hitung() {
+            var bilangan1 = parseInt(document.getElementById("bilangan1").value);
+            var bilangan2 = parseInt(document.getElementById("bilangan2").value);
+            
+            var hasilPenjumlahan = bilangan1 + bilangan2;
+            
+            document.getElementById("hasil").innerText = "Hasil Penjumlahan : " + hasilPenjumlahan;
+        }
+    </script>
+</body>
+</html>
